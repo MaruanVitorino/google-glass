@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaScript - Acendenco a Lâmpada</title>
+</head>
+<body>
+    <script>
+        function acendeLanpada() {
+            // alert("Lampada Acessa!");
+            document.getElementById("luz").src = "_imagens/lampada-acesa.jpg"
+        }
+
+        function apagadaLampada() {
+            document.getElementById("luz").src = "_imagens/lampada-apagada.jpg"
+        }
+        function quebraLampada() {
+            document.getElementById("luz").src = "_imagens/lampada-quebrada.jpg"
+        }
+    </script>
+    <h1>Acenda a Lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" alt="Lamapada apagada" id="luz" onmousemove="acendeLanpada()" onmouseout="apagadaLampada()" onclick="quebraLampada()">
+
+</body>
+</html>
